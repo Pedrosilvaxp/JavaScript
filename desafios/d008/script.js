@@ -9,7 +9,7 @@ function desconto() {
     const total = preco - des
     var p = document.getElementById('res')
 
-    p.innerHTML = `O preço original era ${preco.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})} 
-    <br>Você acaba de ganhar ${des.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})} de desconto (-10%)
-    <br>No fim, você vai pagar ${total.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})} no produto ${produto}`
+    p.innerHTML = `O preço original era <strong>${preco.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})}</strong> 
+    <br>Você acaba de ganhar <strong>${des.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})}</strong> de desconto (-10%)
+    <br>No fim, você vai pagar <strong>${total.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})}</strong> no produto <strong>${produto}</strong>`
 }
