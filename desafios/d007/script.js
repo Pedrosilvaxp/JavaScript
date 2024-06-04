@@ -5,5 +5,5 @@ function cotacao() {
     const conversao = Number(dinheiro / cota)
 
     const res = document.querySelector('div')
-    res.innerHTML = `Com <strong>${dinheiro.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})}</strong> reais, você poderia comprar <strong>U${conversao.toLocaleString('en-US', {style:'currency', currency:'USD'})}</strong> dólares`
+    res.innerHTML = `Com <strong>${dinheiro.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})}</strong> reais, você poderia comprar <strong>${conversao.toLocaleString('en-US', {style:'currency', currency:'USD'})}</strong> dólares`
 }
