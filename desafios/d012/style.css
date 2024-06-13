@@ -1,0 +1,16 @@
+body {
+    background-image: linear-gradient(to bottom, chartreuse, lightgrey);
+    background-attachment: fixed;
+    font-family: 'Trebuchet MS';
+    text-align: center;
+}
+input {
+    padding: 20px;
+}
+section {
+    width: 600px;
+    min-width: auto;
+    margin: auto;
+    text-align: left;
+    line-height: 2em;
+}
