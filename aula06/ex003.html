@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FirstScript3</title>
+    <style>
+        body {
+            background-color: aqua;
+            color: white;
+            font: arial 20pt ;
+        }
+        h1 {
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição!!</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um número: ')) // Number
+        var n2 = Number(window.prompt('Digite outro: ')) // Number
+
+        var s = n1 + n2
+        // window.alert("O valor da soma dos dois números é: " + String(s)) // Convertendo a variável para String, mesmo depois
+        window.alert(`O valor da soma entre ${n1} e ${n2}, é igual a: ${s}`) // Formatação usando o PLACEHOLDER, sempre ENTRE CRASES `...´
+    </script>
+</body>
+</html>

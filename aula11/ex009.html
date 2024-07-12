@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National</title>
+    <style>
+        * {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nacionalidades</h1>
+    <p>Digite onde você nasceu:</p>
+    <input type="text" name="nat" id="nat">
+    <input type="button" value="Verificar" onclick="nacio()">
+    <div id="res"><p>Resultado</p></div>
+
+    <script>
+        function nacio() {
+            var nacio = String(document.querySelector('#nat').value).toLowerCase()
+            var res = document.querySelector('#res')
+
+            if (nacio == 'brasil') {
+                res.innerHTML = `<p>Você nasceu no Brasil, você é brasileiro!</p>`
+            } else {
+                res.innerHTML = `<p>Você é estrangeiro</p>`
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <script src="scrtab.js"></script>
+    <style>
+        * {margin: 0; padding: 0; font-family: 'Trebuchet MS'; }
+        body {
+            background-color: blueviolet;
+        }
+        header {
+            text-align: center;
+            color: white;
+        }
+        section {
+            margin: auto;
+            width: 600px;
+            background-color: white;
+            border-radius: 20px;
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            column-gap: 25px;
+            height: 270px;
+        }
+        input {
+            padding: 5px;
+            margin: 3px;
+        }
+        input#bot {
+            padding: 3px 10px;
+            margin: 10px;
+            background-color: blueviolet;
+            color: white;
+            font-weight: bolder;
+        }
+        #bot:active {
+            padding: 2px 8px;
+            transition-duration: .2s;
+        }
+        div#res {
+            border: 1px solid black;
+            border-radius: 30px;
+            max-width: 200px;
+            margin: auto;
+            text-align: center;
+            padding: 6px 10px;
+        }
+        select {
+            text-align: center;
+            border-radius: 30px;
+            overflow: hidden;
+            width: 240px;
+            font: normal bold 18px monospace;
+            padding: 17px;
+        }
+        footer {
+            margin: 10px;
+            text-align: center;
+            font-size: 24px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Tabuada</h1>
+        </header>
+        <section>
+            <div>
+                <select name="tabuada" id="seltab" size="10">
+                    <option value="">Digite um número ao lado</option>
+                </select>
+            </div>
+            <div>
+                <p>Número: <input type="number" name="num" id="txtn"> <input type="button" value="Ver Tabuada" id="bot" onclick="tabuada()"> <input type="button" value="Limpar" id="bot" onclick="limpar()"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Curso em Vídeo</p>
+    </footer>
+</body>
+</html>

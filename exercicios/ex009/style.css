@@ -1,0 +1,14 @@
+body {
+    background-image: linear-gradient(to bottom, lightgrey, blueviolet);
+    background-attachment: fixed;
+    font-family: cursive;
+    text-align: center;
+}
+button {
+    padding: 10px;
+}
+mark {
+    background-color: blueviolet;
+    padding: 3px;
+    color: white;
+}

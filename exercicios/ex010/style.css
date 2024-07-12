@@ -1,0 +1,12 @@
+body {
+    background-image: linear-gradient(130deg, yellow 60%, aqua);
+    background-attachment: fixed;
+    font-family: 'Trebuchet MS';
+    text-align: center;
+}
+button {
+    background-color: aqua;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Contador</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS';
+            background-color: blueviolet;
+        }
+        header > h1 {
+            text-align: center;
+            color: white;
+        }
+        section {
+            border-radius: 30px;
+            max-width: 400px;
+            min-width: 220px;
+            background-color: white;
+            padding: 10px 30px;
+            margin: auto;
+        }
+        div.lado {
+            display: flex;
+            align-items: center;
+        }
+        footer {
+            text-align: center;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vamos Contar</h1>
+    </header>
+    <main>
+        <section>
+            <div class="lado">
+                <h2>Início:</h2><input type="number" name="number" id="n1">
+            </div>
+            <div class="lado">
+                <h2>Fim:</h2><input type="number" name="number" id="n2">
+            </div>
+            <div class="lado">
+                <h2>Passo:</h2><input type="number" name="number" id="n3">
+            </div>
+            <input type="button" value="Contar" onclick="contagem()">
+
+            <p id="msg">Preparando a contagem...</p>
+            <div id="res"></div>
+        </section>
+    </main>
+    <footer>
+        <h2>Curso Em Vídeo &copy;</h2>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

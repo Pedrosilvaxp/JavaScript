@@ -1,0 +1,46 @@
+* {font-family: 'Trebuchet MS';}
+
+header {
+    text-align: center;
+    color: white;
+}
+
+body {
+    background-color: blueviolet;
+}
+
+section {
+    background-color: aliceblue;
+    border-radius: 30px;
+    border: 1px solid lightgrey;
+    padding: 13px 17px;
+    max-width: 650px;
+    margin: auto;
+}
+
+select {
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px 4px 4px 20px;
+    text-align: center; 
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 300px;
+}
+
+div.container {
+    display: flex;
+    align-items: top;
+    column-gap: 20px;
+    flex-direction: row;
+}
+
+input {
+    background-color: blueviolet;
+    border: 1px solid lightgrey;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+}

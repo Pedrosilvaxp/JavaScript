@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculos</title>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, white, rgb(105, 90, 90));
+            background-attachment: fixed;
+            font-family: 'Trebuchet MS';
+            text-align: center;
+        }
+        section {
+            max-width: 600px;
+            margin: auto;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vários cálculos em JS</h1>
+    <button onclick="calcular()">Clique aqui para calcular</button>
+    <section>
+        <p id="result">O resultado aparecerá aqui...</p>
+    </section>
+
+    <script>
+        function calcular() {
+            const num = Number(prompt('Digite um número para ser calculado:'))
+
+            let p = document.getElementById('result')
+
+            p.innerHTML = `O número a ser calculado é o ${num}`
+            p.innerHTML += `<p>Tem o valor absoluto: ${Math.abs(num)}</p>`
+            p.innerHTML += `<p>Tem a parte inteira de ${Math.trunc(num)}</p>`
+            p.innerHTML += `<p>Tem o valor inteiro mais próximo ${Math.round(num)}</p>`
+            p.innerHTML += `<p>A sua raiz quadrada de ${Math.sqrt(num)}</p>`
+            p.innerHTML += `<p>Raiz cúbica de ${Math.cbrt(num)}</p>`
+            p.innerHTML += `<p>O valor de ${num}<sup>2</sup> é igual a ${Math.pow(num, 2)}</p>`
+            p.innerHTML += `<p>O valor de ${num}<sup>3</sup> é igual a ${Math.pow(num, 3)}</p>`
+        }
+    </script>
+</body>
+</html>

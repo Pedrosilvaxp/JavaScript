@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horas</title>
+    <style>
+        * {
+            text-align: center;
+        }
+        section > h1 {
+            margin-top: 7em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Horários</h1>
+            <p>Informe o horário abaixo e receba uma mensagem</p>
+            <input type="time" name="horas" id="horas">
+            <input type="button" value="Enviar" onclick="msg()">
+            <div id="msg">Mensagem</div>
+
+            <script>
+                function msg() {
+                    var hora = String(document.getElementById('horas').value)
+                    var msg = document.getElementById('msg')
+
+                    if (hora < '12:00') {
+                        msg.innerHTML = '<h2>Bom dia!</h2>'
+                    } else if (hora < '18:00') {
+                        msg.innerHTML = '<h2>Boa tarde!</h2>'
+                    } else {
+                        msg.innerHTML = '<h2>Boa noite!<h2>'
+                    }
+                }
+            </script>
+        </section>
+    </main>
+</body>
+</html>

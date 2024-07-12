@@ -1,0 +1,11 @@
+* {margin: 0px; padding: 0px;}
+
+body {
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    padding: 10px;
+}
+input {
+    margin: 14px;
+    padding: 10px;
+}

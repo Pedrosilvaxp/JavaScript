@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(144, 144, 248);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    color: white;
+}
+header > h1 {
+    text-transform: capitalize;
+    margin: 15px;
+}
+
+section {
+    background-color: white;
+    border-radius: 23px;
+    box-shadow: 4px 4px 9px rgb(110, 110, 187);
+    margin: auto;
+    padding: 15px;
+    max-width: 400px;
+    min-width: 220px;
+}
+#foto img {
+    border-radius: 50px;
+    width: 350px;
+    height: 250px;
+}
+section > div#msg {
+    margin-bottom: 20px;
+}
+
+footer {
+    margin: 12px;
+    font-variant: small-caps;
+    color: white;
+}

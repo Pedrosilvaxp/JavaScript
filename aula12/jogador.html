@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogadores</title>
+    <style>
+        * {
+            text-align: center;
+        }
+
+        body {
+            background-color: aliceblue;
+        }
+        section {
+            background-color: white;
+            background-attachment: fixed;
+            max-width: 700px;
+            min-width: 320px;
+            margin: auto;
+            padding-top: 10px;
+        }
+
+        main > h1 {
+            margin-top: 2em;
+            color: black;
+            font-size: 3em;
+        }
+
+       #lado {
+           display: inline;
+       } 
+       #mes {
+           border: 10px solid #4977B2;
+       }
+       #cr {
+           border: 10px solid ;
+           margin-left: 10px;
+       }
+
+       #msg1 {
+           display: none;
+       }
+       #msg2 {
+           display: none;
+       }
+
+       #next {
+        display: none;
+       }
+    </style>
+</head>
+<body>
+    <main>
+        <h1 id="titulo">Duelo de Jogadores</h1>
+        <section>
+            <div id="lado">
+                <h2>Qual é o melhor?</h2>
+                <a href="#"><img src="fotos/messi.jpg" alt="Foto de messi" id="mes" onclick="messi()"></a>
+                <a href="#"><img src="fotos/cr7.jpg" alt="Foto de cr7" id="cr" onclick="cr7()"></a>
+                <h2 id="msg1">Você acertou</h2>
+                <h2 id="msg2">Você errou</h2>
+                <a href="jog2.html"><button id="next">Próximo</button></a>
+            </div>
+            <script>
+                function messi() {
+                    var msg = document.getElementById('msg2')
+                    var msg2 = document.querySelector('#msg1')
+                    
+                    msg.style.display = 'block'
+                    msg.style.color = 'red'
+                    msg2.style.display = 'none'
+                }
+                function cr7() {
+                    var msg = document.querySelector('#msg1')
+                    var msg2 = document.querySelector('#msg2')
+                    var next = document.querySelector('#next')
+
+                    msg.style.display = 'block'
+                    msg.style.color = 'green'
+                    msg2.style.display = 'none'
+                    next.style.display = 'block'
+                    next.style.textalign = 'center'
+                }
+            </script>
+        </section>
+    </main>
+</body>
+</html>

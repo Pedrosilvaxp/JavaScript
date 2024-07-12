@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <style>
+        * {
+            text-align: center;
+        }
+
+        body {
+            background-color: blue;
+        }
+        main {
+            margin: 10em auto;
+            background-color: aliceblue;
+            padding: 20px;
+            width: 400px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 2px black;
+        }
+        #velo {
+            width: 40px;
+            height: 20px;
+        }
+        #verificar {
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Detran</h1>
+        <section>
+            <h2>Sistema de monitoramento</h2>
+            <p>Digite a velocidade do seu carro:</p>
+            <input type="number" name="velocidade" id="velo">
+            <input type="button" value="Verificar" id="verificar" onclick="veri()">
+            <div id="res"></div>
+            <div id="msg"></div>
+
+            <script>
+                function veri() {
+                    var velo = Number(document.getElementById('velo').value)
+                    var res = document.querySelector('#res')
+                    var msg = document.querySelector('#msg')
+                    
+                    if (velo <= 80) {
+                        res.innerHTML = '<p>Continue respeitando as regras</p>'
+                    } else {
+                        var multa = (velo - 80) * 7
+                        res.innerHTML = `<p>Por não respeitar as regras, você foi <strong>MULTADO</strong> por <strong>R$ ${multa},00 reais</strong></p>`
+                    }
+                    msg.innerHTML = '<p>Tenha um bom dia!</p>'
+                }
+            </script>
+        </section>
+    </main>
+</body>
+</html>
